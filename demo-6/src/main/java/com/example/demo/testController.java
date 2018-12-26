@@ -35,6 +35,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class testController {
 	//private static final Logger logger =
             //LoggerFactory.getLogger(DocListRest.class);
+	@RequestMapping("/table/line")
+	public String getTableLine() {
+		//http://www.mmpp.org/archives/1097
+		return "getTableLine";
+	}
 	@RequestMapping("/data/tables")
 	public String dataTables() {
 		//https://qiita.com/nissuk/items/7ac59af5de427c0585c5

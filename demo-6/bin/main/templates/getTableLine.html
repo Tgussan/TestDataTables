@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+	<table border="1" id="list">
+		<tbody id="p2146-tbody">
+			<tr>
+				<td><input type="button" id="c" value="編集"></td>
+				<td><input type="button" value="+" onclick="addList(this);"/>
+					<input type="button" value="-" onclick="removeList(this);" /></td>
+				<td><input type="text" id="Input" value=""></td>
+			</tr>
+			<tr>
+				<td><input type="button" id="c" value="編集"></td>
+				<td><input type="button" value="+" onclick="addList(this);" />
+					<input type="button" value="-" onclick="removeList(this);" /></td>
+				<td><input type="text" id="Input" value=""></td>
+			</tr>
+			<tr>
+				<td><input type="button" id="c" value="編集"></td>
+				<td><input type="button" value="+" onclick="addList(this);" />
+					<input type="button" value="-" onclick="removeList(this);" /></td>
+				<td><input type="text" id="Input" value=""></td>
+			</tr>
+			<tr>
+				<td><input type="button" id="c" value="編集"></td>
+				<td><input type="button" value="+" onclick="addList(this);" />
+					<input type="button" value="-" onclick="removeList(this);" /></td>
+				<td><input type="text" id="Input" value=""></td>
+			</tr>
+		</tbody>
+	</table>
+	<table id="edit" style="display: none">
+		<tr>
+			<th>行番号</th>
+			<td><input type="text" id="key" value="" readonly="true" /></td>
+		</tr>
+		<tr>
+			<th>VALUE</th>
+			<td><input type="text" id="value" value="" /></td>
+		</tr>
+		<tr>
+			<td colspan=2><input type="button" id="commit" value="更新" /></td>
+		</tr>
+	</table>
+</body>
+</html>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="/js/getTableLine.js" th:src="@{/js/getTableLine.js}"></script>
+
